@@ -1,0 +1,8 @@
+{
+  "name": "SIGAP Face Recognition",
+  "description": "Sistem Geolokasi Absensi & Laporan Kerja (Gold Prestige Edition)",
+  "requestFramePermissions": [
+    "camera",
+    "geolocation"
+  ]
+}
