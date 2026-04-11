@@ -16,6 +16,7 @@ const DEFAULT_USERS: User[] = [
     jabatan: 'Super Admin',
     nip: '000001',
     foto: '',
+    password: 'admin123',
     role: 'admin',
     status: 'AKTIF'
   },
@@ -25,6 +26,7 @@ const DEFAULT_USERS: User[] = [
     jabatan: 'Staff Umum',
     nip: '000002',
     foto: '',
+    password: 'staff123',
     role: 'user',
     status: 'AKTIF'
   }

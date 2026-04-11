@@ -181,7 +181,7 @@ export default function App() {
 
   const handleLogin = (username: string, password: string) => {
     const users = StorageService.getUsers();
-    const foundUser = users.find(u => u.username === username && password === (username === 'admin' ? 'admin123' : 'staff123'));
+    const foundUser = users.find(u => u.username === username && u.password === password);
     
     if (foundUser) {
       if (foundUser.status !== 'AKTIF') return showToast('Akun tidak aktif', 'error');

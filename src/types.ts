@@ -4,6 +4,7 @@ export interface User {
   jabatan: string;
   nip: string;
   foto: string;
+  password?: string;
   role: 'admin' | 'user';
   status: 'AKTIF' | 'NONAKTIF';
 }

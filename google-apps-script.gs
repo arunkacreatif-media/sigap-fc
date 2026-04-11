@@ -192,10 +192,10 @@ function setupInfrastructure() {
   // 1. Users
   let sheet = ss.getSheetByName(SHEETS.USERS) || ss.insertSheet(SHEETS.USERS);
   sheet.clear();
-  sheet.appendRow(['username', 'nama', 'jabatan', 'nip', 'foto', 'role', 'status']);
-  sheet.appendRow(['admin', 'Administrator', 'Super Admin', '000001', '', 'admin', 'AKTIF']);
-  sheet.appendRow(['staff', 'Budi Santoso', 'Staff Umum', '000002', '', 'user', 'AKTIF']);
-  sheet.appendRow(['staff2', 'Siti Aminah', 'Staff Keuangan', '000003', '', 'user', 'AKTIF']);
+  sheet.appendRow(['username', 'nama', 'jabatan', 'nip', 'foto', 'password', 'role', 'status']);
+  sheet.appendRow(['admin', 'Administrator', 'Super Admin', '000001', '', 'admin123', 'admin', 'AKTIF']);
+  sheet.appendRow(['staff', 'Budi Santoso', 'Staff Umum', '000002', '', 'staff123', 'user', 'AKTIF']);
+  sheet.appendRow(['staff2', 'Siti Aminah', 'Staff Keuangan', '000003', '', 'staff123', 'user', 'AKTIF']);
   
   // 2. Attendance
   sheet = ss.getSheetByName(SHEETS.ATTENDANCE) || ss.insertSheet(SHEETS.ATTENDANCE);
